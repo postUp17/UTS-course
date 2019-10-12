@@ -7,13 +7,10 @@ import Header from './Header';
 import { checkImg } from './helpers';
 
 import data from './ratings.json';
-import Subject from './Subject';
 import './App.css';
 
 const { titles } = data;
 
-let users;
-let resultP;
 let resultDivs = [];
 
 const roundTwoDecimals = number => (Math.round(number * 100) / 100).toFixed(2);

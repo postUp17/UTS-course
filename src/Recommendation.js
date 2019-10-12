@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, Button } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 
 import { checkImg } from './helpers';
 import './Recommendation.css';
@@ -38,7 +38,7 @@ const Recommendation = props => {
         <div className="sub-content">
           {topReco.length > 0 &&
             topReco.map(item => (
-              <div>
+              <div key={item.subject}>
                 <div>
                   <img
                     alt="subject-img"
